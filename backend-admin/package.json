@@ -1,0 +1,36 @@
+{
+  "name": "backend-admin",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "dev:ngrok": "node scripts/dev-with-ngrok.js",
+    "ngrok": "ngrok http 3000",
+    "create-admin": "node scripts/createAdmin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/hapi": "^21.4.0",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/vision": "^7.0.3",
+    "@paypal/paypal-server-sdk": "^1.1.0",
+    "axios": "^1.10.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "firebase-admin": "^13.4.0",
+    "imagekit": "^6.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "stream-to-buffer": "^0.1.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "ngrok": "5.0.0-beta.2",
+    "nodemon": "^3.1.10"
+  }
+}
